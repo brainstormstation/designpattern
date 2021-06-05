@@ -4,10 +4,10 @@ public class SingStaticInnerClass {
     private SingStaticInnerClass () {}
 
     private static class Holder {
-        private final static SingStaticInnerClassTest INSTANCE = new SingStaticInnerClassTest();
+        private final static SingStaticInnerClass INSTANCE = new SingStaticInnerClass();
     }
 
-    public static SingStaticInnerClassTest getInstance() {
+    public static SingStaticInnerClass getInstance() {
         return Holder.INSTANCE;
     }
 
