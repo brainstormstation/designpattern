@@ -11,7 +11,7 @@ public class StrategyTest {
         Cat c3 = new Cat(10,28);
 
         Cat[] cs = new Cat[] {c1, c2, c3};
-        Sorter s = new Sorter<Cat>();
+        Sorter<Cat> s = new Sorter<>();
         s.sort(cs, new CatWeightComparator());
 
         for (Cat c: cs) {
@@ -26,7 +26,7 @@ public class StrategyTest {
         Cat c3 = new Cat(10,28);
 
         Cat[] cs = new Cat[] {c1, c2, c3};
-        Sorter s = new Sorter<Cat>();
+        Sorter<Cat> s = new Sorter<>();
         s.sort(cs, new CatHeightComparator());
 
         for (Cat c: cs) {
